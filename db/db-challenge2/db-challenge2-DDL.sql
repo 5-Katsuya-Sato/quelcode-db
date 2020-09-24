@@ -39,7 +39,7 @@ CREATE TABLE `posts` (
       `contents` varchar(1000) NOT NULL,
       `file_name` varchar(100),
       `is_deleted` tinyint(1) DEFAULT 0 NOT NULL comment'1:削除済み',
-      `created_at` datetime(5) DEFAULT CURRENT_TIMESTAMP(5) NOT,
+      `created_at` datetime(5) DEFAULT CURRENT_TIMESTAMP(5) NOT NULL,
       `created_by` int(11) NOT NULL REFERENCES users(ID),
       `modified_at` timestamp(4) DEFAULT CURRENT_TIMESTAMP(4) ON UPDATE CURRENT_TIMESTAMP(4) NOT NULL,
       `modified_by` int(11) NOT NULL REFERENCES users(ID),
