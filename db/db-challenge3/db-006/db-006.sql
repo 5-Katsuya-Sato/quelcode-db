@@ -9,5 +9,4 @@ SELECT id
        , created_at
        , modified_at 
 FROM users 
-WHERE is_deleted IS NOT NULL 
 ORDER BY id;
