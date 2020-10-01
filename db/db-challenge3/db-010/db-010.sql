@@ -15,5 +15,6 @@ JOIN
             AND u.is_deleted = 0 
             AND p.is_deleted = 0 
       GROUP BY c.id, c.name) AS m 
-      ON m.last = p.created_at 
-WHERE m.id=ch.id AND u.id=p.created_by;
+ON m.last = p.created_at 
+WHERE m.id=ch.id 
+      AND u.id=p.created_by;
